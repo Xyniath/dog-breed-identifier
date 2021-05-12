@@ -1,0 +1,5 @@
+.idea/*
+uploads/*
+!uploads/test-afghan-hound.jpg
+.DS_Store
+todo.txt

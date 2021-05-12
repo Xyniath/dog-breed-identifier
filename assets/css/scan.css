@@ -1,0 +1,150 @@
+body{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.692),rgba(48, 48, 48, 0.699)),url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#main-container{
+  display: flexbox;
+  position: relative;
+  height: auto;
+  width: 50%;
+  top: 200px;
+  margin: auto;
+}
+
+#scan-header{
+  padding-bottom: 20px;
+}
+
+#initial-container{
+  position: relative;
+  height: auto;
+  text-align: center;
+  padding: 50px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+#initial-container a{
+  font-size: small;
+}
+
+#upload-container input[type="button" i]{
+  padding: 5px;
+  margin: 5px;
+  border-style: none;
+  background-color: burlywood;
+  color:white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#upload-container input[type="button" i]:hover{
+  background-color: rgb(174, 143, 103);
+}
+
+.preview{
+	/* width: 299px;
+	height: 299px; */
+	margin:auto;
+	margin-bottom:10px;
+	background-color: white;
+}
+
+.preview img{
+	display:none;
+  /* width: 100%; */
+  height: auto;
+  max-width: 80%;
+}
+
+#result-container{
+  display: none;
+  margin-top: 20px;
+  padding: 50px;
+  position: relative;
+  height: auto;
+  text-align: center;
+  background-color: white;
+  transition: 1s;
+}
+.centered{
+	text-align:center;
+}
+
+#help-text a{
+  color: rgb(174, 143, 103);
+}
+
+input[type="file"] #file-upload-button{
+  margin: 5px;
+  display: flexbox;
+  background-color: teal;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x:hidden;
+  }
+  #main-container{
+    width: 70%;
+    top: 100px;
+  }
+}
+
+#loading{
+  width: 100px;
+  height: 100px;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+#help-loading{
+  display: none;
+}
+
+#sql-data{
+  margin-top: 25px;
+  display: none;
+}
+input[type=file]::file-selector-button{
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  border-style: none;
+  border-radius: .2em;
+  background-color: burlywood;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  border-style: none;
+  border-radius: .2em;
+  background-color: burlywood;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: rgb(174, 143, 103);
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+  background-color: rgb(174, 143, 103);
+}
